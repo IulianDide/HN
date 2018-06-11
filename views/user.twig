@@ -1,0 +1,37 @@
+<html lang="en">
+
+    {{ include('head.html') }}
+	
+    <body>
+	
+		{{ include('header.html') }}
+        
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1">User: </div>
+				<div class="col-sm-11">{{ user.id }}</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">Created: </div>
+				<div class="col-sm-11">{{ user.created }}</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">Karma: </div>
+				<div class="col-sm-11">{{ user.karma }}</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">About: </div>
+				<div class="col-sm-11">{{ user.about }}</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-11 offset-md-1"><a href="/HN/submitted/{{ user.id}}">Submision</a></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-11 offset-md-1"><a href="">Comments</a></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-11 offset-md-1"><a href="">Favorites</a></div>
+			</div>
+		</div>
+    </body>
+</html>
