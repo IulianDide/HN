@@ -1,4 +1,8 @@
 {
+	"name" : "HN",
+	"autoload": {
+        "psr-4": {"HN\\": "src/HN"}
+    },
     "require": {
         "silex/silex": "^2.0",
         "rebangm/silex-guzzlehttp-provider": "^2.0",
